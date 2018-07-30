@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PipBoy</title>
     <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/pipboy.app.css">
+    <link rel="stylesheet" href="../CSS/pipboy-app.css">
 </head>
 
 <body>
@@ -33,29 +33,51 @@
         </div>
     </nav>
 
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a href="#status" class="nav-link" data-toggle="tab">STATUS</a>
-        </li>
-        <li class="nav-item">
-            <a href="#special" class="nav-link" data-toggle="tab">SPECIAL</a>
-        </li>
-        <li class="nav-item">
-            <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
-        </li>
-    </ul>
-    <div class="tab-content">
-        <div class="tab-pane active" id="status" role="tabpanel">
-            STATUS
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="#status" class="nav-link" data-toggle="tab">STATUS</a>
+            </li>
+            <li class="nav-item">
+                <a href="#special" class="nav-link" data-toggle="tab">SPECIAL</a>
+            </li>
+            <li class="nav-item">
+                <a href="#perks" class="nav-link" data-toggle="tab">PERKS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="tab-content">
+            <div class="tab-pane active" id="status" role="tabpanel">
+                <div class="center-image">
+                    <img src="../Images/vb.png">
+                </div>
+                
+            </div>
+            <div class="tab-pane" id="special" role="tabpanel">
+                SPECIAL
+            </div>
+            <div class="tab-pane" id="perks" role="tabpanel">
+                PERKS
+            </div>
         </div>
-        <div class="tab-pane" id="special" role="tabpanel">
-            SPECIAL
-        </div>
-        <div class="tab-pane" id="perks" role="tabpanel">
-            PERKS
-        </div>
-    </div>
+    </main>
 
+    <footer class="navbar navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP90/90
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress"></div>
+            </div>
+            <div class="col-3">
+                AP50/50
+            </div>
+        </div>
+    </footer>
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../Bootstrap/js/bootstrap.min.js"></script>
