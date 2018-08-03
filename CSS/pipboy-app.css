@@ -48,12 +48,30 @@ body::after{
 
 ul > li.nav-item > a.nav-link{
     color: #14fe17 !important;
+    font-size: 32px;
+    line-height: 22px;
+    padding-bottom: 0px;
+}
+
+.nav-item.active::before{
+    content: "";
+    position: absolute;
+    background: #272b23;
+    width: 100%;
+    height: 20px;
+    top: 20px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    left: 0px
 }
 
 .navbar-light .nav-item > .nav-link{
     text-align: center;
-    width: 50%;
     margin: auto;
+    z-index: 50;
+    position: relative;
+    background: #272b23;
 }
 
 .navbar-nav{
@@ -63,6 +81,8 @@ ul > li.nav-item > a.nav-link{
     display: block;
     position: relative;
     width: 100%;
+    padding: 0% 1%;
+    margin: 0% 6%;
 }
 
 .center-image img{
@@ -80,4 +100,33 @@ ul > li.nav-item > a.nav-link{
     bottom: 0;
     width: calc(100% - 20px);
     margin: 10px
+}
+
+.navbar.navbar-light .navbar-nav{
+    margin: 0% 10%;
+}
+
+.nav.nav-tabs{
+    margin: 10px;
+    border-bottom: none;
+    padding: 0% 15.7%;
+}
+
+.nav.nav-tabs > .nav-item > .nav-link:hover{
+    border: 1px solid transparent;
+}
+
+.nav.nav-tabs > li > a{
+    font-size: 26px !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    padding: 5px 10px;
+}
+
+.nav.nav-tabs > li:nth-child(2) > a{
+    opacity: 0.5;
+}
+
+.nav.nav-tabs > li:nth-child(3) > a{
+    opacity: 0.2;
 }
