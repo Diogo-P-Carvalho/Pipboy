@@ -22,12 +22,12 @@ body::after{
     pointer-events: none;
 }
 
-.navbar{
+.navbar.navbar-light{
     border-bottom: 2px solid;
     margin: 0px 10px;
 }
 
-.navbar::before, .navbar::after{
+.navbar.navbar-light::before, .navbar.navbar-light::after{
     height: 7px;
     width: 2px;
     content: "";
@@ -99,7 +99,7 @@ ul > li.nav-item > a.nav-link{
     display: block;
     bottom: 0;
     width: calc(100% - 20px);
-    margin: 10px
+    font-size: 20px;
 }
 
 .navbar.navbar-light .navbar-nav{
@@ -129,4 +129,31 @@ ul > li.nav-item > a.nav-link{
 
 .nav.nav-tabs > li:nth-child(3) > a{
     opacity: 0.2;
+}
+
+.level-progress{
+    width: 70%;
+    height: 14px;
+    border: 2px solid;
+    display: inline-block;
+}
+
+.level-progress-indicator{
+    height: 10px;
+    background: #14fe17;
+    position: relative;
+    width: 70%;
+}
+
+.navbar.navbar-light.pip-footer{
+    border: none;
+}
+
+.navbar.pip-footer .col-3, .navbar.pip-footer .col-6{
+    background: rgba(16, 255, 0, 0.15);
+}
+
+.navbar.pip-footer .col-6{
+    margin: 0px 3px;
+    flex: 0 0 49.5%;
 }
