@@ -143,6 +143,13 @@ ul > li.nav-item > a.nav-link{
     display: inline-block;
 }
 
+.level-progress-health{
+    width: 90%;
+    height: 15px;
+    border: 2px solid;
+    display: inline-block;
+}
+
 .level-progress-indicator{
     height: 6px;
     background: #14fe17;
@@ -150,17 +157,26 @@ ul > li.nav-item > a.nav-link{
     width: 70%;
 }
 
+.level-progress-health-indicator{
+    height: 12px;
+    background: #14fe17;
+    position: relative;
+    width: 70%;
+}
+
 .navbar.navbar-light.pip-footer{
     border: none;
+    font-size: 22px;
 }
 
 .navbar.pip-footer .col-3, .navbar.pip-footer .col-6{
     background: rgba(16, 255, 0, 0.15);
+    padding: 5px 10px;
 }
 
 .navbar.pip-footer .col-6{
     margin: 0px 3px;
-    flex: 0 0 49%;
+    flex: 0 0 49.5%;
 }
 
 .stat-bar{
