@@ -229,6 +229,10 @@ ul > li.nav-item > a.nav-link{
     width: 90%;
 }
 
+.stat-numbers{
+    margin-top: -50px;
+}
+
 .stat-numbers .col-1, .stat-numbers .col-2{
     background: rgba(16, 255, 0, 0.15);
     margin-right: 4px;
@@ -236,4 +240,28 @@ ul > li.nav-item > a.nav-link{
 
 .stat-numbers .col-1.transparent, .stat-numbers .col-2.transparent{
     background: transparent;
+}
+
+.stat-numbers img{
+    width: 100%;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+}
+
+.stat-numbers img.sm-image{
+    width: 18px;
+    height: 18px;
+    margin-left: -6px;
+}
+
+.points {
+    margin-left: -6px;
+}
+
+.stat-numbers img.helmet-icon{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.spacer-numbers{
+    width: 50px;
 }
