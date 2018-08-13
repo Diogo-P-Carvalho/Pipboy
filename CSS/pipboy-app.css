@@ -265,3 +265,27 @@ ul > li.nav-item > a.nav-link{
 .spacer-numbers{
     width: 50px;
 }
+
+#status.tab-pane.full{
+    max-width: 100%;
+}
+
+.item-list{
+    float: left;
+    list-style: none;
+    margin: 0px;
+}
+
+.item-list li a{
+    display: block;
+    width: 300px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    color: #14fe17;
+}
+
+.item-list li a:hover{
+    text-decoration: none;
+    background: #14fe17;
+    color: #272b23;
+}
