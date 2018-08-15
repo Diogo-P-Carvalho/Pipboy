@@ -17,7 +17,6 @@ body::after{
     top: 0px;
     left: 0px;
     background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4) 1px, transparent 1px, transparent 2px);
-    opacity: 0.3;
     z-index: 1000000;
     pointer-events: none;
 }
@@ -87,7 +86,7 @@ ul > li.nav-item > a.nav-link{
 
 .center-image{
     position: absolute;
-    margin-left: 100px;
+    margin-left: 125px;
 }
 
 .center-image img{
@@ -189,6 +188,10 @@ ul > li.nav-item > a.nav-link{
     margin: auto;
 }
 
+.stat-bars{
+    margin-left: 25px;
+}
+
 .stat-bars > .row{
     margin-bottom: 100px;
 }
@@ -263,12 +266,21 @@ ul > li.nav-item > a.nav-link{
 }
 
 .spacer-numbers{
-    width: 50px;
+    width: 65px;
+}
+
+.name{
+    font-size: 20px;
+    padding: 15px;
 }
 
 #status.tab-pane.full{
     max-width: 100%;
     width: 100%;
+}
+
+.container{
+    margin-top: 4%;
 }
 
 .item-list{
@@ -283,12 +295,33 @@ ul > li.nav-item > a.nav-link{
     padding: 5px 10px;
     border-radius: 2px;
     color: #14fe17;
+    padding-left: 30px;
+    text-decoration: none !important;
 }
 
 .item-list li a:hover{
     text-decoration: none;
     background: #14fe17;
     color: #272b23;
+}
+
+.item-list a.active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background: #14fe17;
+    left: 65px;
+    margin-top: 10px;
+}
+
+.item-list a.active:hover::before{
+    background: #272b23;
+}
+
+.inv-content{
+    font-size: 20px;
 }
 
 .tab-pane.full{
