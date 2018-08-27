@@ -1,6 +1,6 @@
 /**Created by Diogo on 2018-08-13 */
 
-$(document).ready(function(){
+$(document).ready(function(){ 
     var weapons = [
     {
         "name": "44_pistol",
@@ -40,6 +40,45 @@ $(document).ready(function(){
     $('.item-list a').on('click', function(e){
         $('.item-list a').removeClass('active');
         $(e.currentTarget).addClass('active');
+    });
+
+    $('#tab #nav-status').on('click', function(){
+        $('#tab').animate({
+            margin: "10px",
+            borderBottom: "none",
+            padding: "0% 15.7%"});
+        $(this).animate({
+            opacity: "1"}, 500);
+        $('#nav-special').animate({
+            opacity: "0.4"}, 500);
+        $('#nav-perks').animate({
+            opacity: "0.2"}, 500);
+    });
+
+    $('#tab #nav-special').on('click', function(){
+        $('#tab').animate({
+            margin: "10px",
+            borderBottom: "none",
+            padding: "0% 10.3%"});
+        $(this).animate({
+            opacity: "1"}, 500);
+        $('#nav-status').animate({
+            opacity: "0.4"}, 500);
+        $('#nav-perks').animate({
+            opacity: "0.4"}, 500);
+    });
+
+    $('#tab #nav-perks').on('click', function(){
+        $('#tab').animate({
+            margin: "10px",
+            borderBottom: "none",
+            padding: "0% 4.8%"});
+        $(this).animate({
+            opacity: "1"}, 500);
+        $('#nav-special').animate({
+            opacity: "0.4"}, 500);
+        $('#nav-status').animate({
+            opacity: "0.2"}, 500);
     });
 
     $('.item-list a').on('mouseenter', function(e){

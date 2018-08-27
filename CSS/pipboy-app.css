@@ -86,17 +86,18 @@ ul > li.nav-item > a.nav-link{
 
 .center-image{
     position: absolute;
-    margin-left: 125px;
+    /*margin-left: 125px;*/
 }
 
 .center-image img{
     margin: auto;
     display: block;
     position: relative;
-    max-height: 300px;
-    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);
-    margin-top: 50px;
-    margin-left: -10px;
+    max-height: 450px;
+    /*filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(1) contrast(2);*/
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(7) brightness(0.6) contrast(4);
+    margin-top: -30px;
+    margin-left: -110px;
 }
 
 .pip-footer{
@@ -133,13 +134,21 @@ ul > li.nav-item > a.nav-link{
     padding: 5px 10px;
 }
 
-.nav.nav-tabs > li:nth-child(2) > a{
+.nav-near-opacity{
+    opacity: 0.4;
+}
+
+.nav-far-opacity{
+    opacity: 0.2;
+}
+
+/*.nav.nav-tabs > li:nth-child(2) > a{
     opacity: 0.5;
 }
 
 .nav.nav-tabs > li:nth-child(3) > a{
     opacity: 0.2;
-}
+}*/
 
 .level-progress{
     width: 70%;
