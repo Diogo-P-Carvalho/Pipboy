@@ -34,14 +34,14 @@
     </nav>
 
     <nav>
-        <ul class="nav nav-tabs inv-nav-tabs">
-            <li class="nav-item">
+        <ul id="inv-tab" class="nav nav-tabs inv-nav-tabs">
+            <li id="nav-weapons" class="nav-item">
                 <a href="#weapons" class="nav-link" data-toggle="tab">WEAPONS</a>
             </li>
-            <li class="nav-item nav-near-opacity">
+            <li id="nav-apparel" class="nav-item nav-near-opacity">
                 <a href="#apparel" class="nav-link" data-toggle="tab">APPAREL</a>
             </li>
-            <li class="nav-item nav-far-opacity">
+            <li id="nav-aid" class="nav-item nav-far-opacity">
                 <a href="#aid" class="nav-link" data-toggle="tab">AID</a>
             </li>
         </ul>
@@ -54,25 +54,57 @@
                     <div class="tab-pane active full" id="weapons" role="tabpanel">
                         <ul class="item-list">
                             <li>
-                                <a href="#" class="44_pistol">.44 Pistol</a>
+                                <a href="#" class="kelloggs_pistol">Kellogg's Pistol</a>
                             </li>
                             <li>
-                                <a href="#" class="10mm_pistol">10mm Pistol</a>
+                                <a href="#" class="righteous_authority">Righteous Authority</a>
                             </li>
                             <li>
-                                <a href="#" class="assault_rifle">Assault Rifle</a>
+                                <a href="#" class="le_fusil_terribles">Le Fusil Terribles</a>
                             </li>
+                            <li>
+                                <a href="#" class="deliverer">Deliverer</a>
+                            </li>
+                            <li>
+                                <a href="#" class="overseers_guardian">Overseer's Guardian</a>
+                            </li>
+                            <li>
+                                <a href="#" class="big_boy">Big Boy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="cryolator">Cryolator</a>
+                            </li>
+                            <li>
+                                <a href="#" class="lorenzos_artifact_gun">Lorenzo's Artifact Gun</a>
+                            </li>
+                            <li>
+                                <a href="#" class="alien_blaster_pistol">Alien Blaster Pistol</a>
+                            </li>
+                            <li>
+                                <a href="#" class="spray_n_pray">Spray N' Pray</a>
+                            </li>                                                                                  
                         </ul>
+
+                        <div class="item-image">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img class="img-fluid weapon_img" src="">                            
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-bonus">
+                            <p class="weapon_bonus"></p>
+                        </div>
 
                         <div class="item-stats">
                             <div class="row-highlight">
                                 <div class="row">
                                     <div class="col-8">Damage</div>
-                                    <div class="col-2">
-                                        <img src="../Images/crosshair.png" class="img-fluid">
-                                    </div>
-                                    <div class="col-2 damage"></div>
-                                    
+                                    <div class="col-4 shooting">
+                                        <img class="img-fluid shooting_type" src="../Images/crosshair.png">
+                                        <span class="damage"></span>
+                                    </div>                                  
                                 </div>                                   
                             </div>
 
@@ -150,22 +182,15 @@
     <footer class="navbar navbar-light pip-footer">
         <div class="row">
             <div class="col-3">
-                HP 90/90
+                <img class="img-fluid weight-icon" src="../Images/weight.png" >
+                <span class="weight"></span>
             </div>
-            <div class="col-6">
-                <div class="row no no-gutters">
-                    <div class="col-2">
-                        LEVEL 1
-                    </div>
-                    <div class="col-10">
-                        <div class="level-progress-health">
-                            <div class="level-progress-health-indicator"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-3">
+                <img class="img-fluid weight-icon" src="../Images/bottle_cap.png" >
+                <span>2509</span>
             </div>
-            <div class="col-3 text-right">
-                AP 70/70
+            <div class="col-6 text-right">
+                
             </div>
         </div>
     </footer>
