@@ -145,8 +145,45 @@ $(document).ready(function(){
     ];
 
     $('.item-list a').on('click', function(e){
-        $('.item-list a').removeClass('active');
-        $(e.currentTarget).addClass('active');
+        var item = $(e.currentTarget);
+        
+        $('.item-list a').removeClass('active'); 
+        item.addClass('active');
+
+        var current_item = item.attr('class').split(' ');
+
+        for(i in weapons){
+            if(weapons[i].name == current_item[0]){
+                var footerDamage = $('.pip-footer');
+                var footerImage = $('.footer-image');
+
+                footerImage.find('.shooting_type').attr('src', weapons[i].shooting_type);
+                footerDamage.find('.damage').html(weapons[i].damage);
+
+                if(weapons[i].name == "lorenzos_artifact_gun"){
+                    var content = '<img class="img-fluid gun-icon" src="../Images/gun.png">';
+                    content += '<img class="img-fluid shooting_type shooting-type-icon shooting-type-icon-after" src="../Images/crosshair.png">';
+                    content += '<span class="damage">28</span>';
+                    content += '<img class="img-fluid shooting_type shooting-type-icon shooting-type-icon-after " src="../Images/radiation.png">';
+                    content += '<span class="damage">14</span>';
+    
+                    $('.footer-image').html(content);
+                }
+                else{
+                    var normalContent = '<img class="img-fluid gun-icon" src="../Images/gun.png">';
+                    normalContent += '<img class="img-fluid shooting_type shooting-type-icon shooting-type-icon-after" src="">';
+                    normalContent += '<span class="damage"></span>';
+    
+                    $('.footer-image').html(normalContent);
+    
+                    var footerDamage = $('.pip-footer');
+                    var footerImage = $('.footer-image');
+    
+                    footerImage.find('.shooting_type').attr('src', weapons[i].shooting_type);
+                    footerDamage.find('.damage').html(weapons[i].damage);
+                }
+            }           
+        }
     });
 
     $('#stat-tab #nav-status').on('click', function(){
@@ -228,10 +265,11 @@ $(document).ready(function(){
     });
 
     $('.item-list a').on('mouseenter', function(e){
-        var current_item = $(e.currentTarget).attr('class');
-        
+        var item = $(e.currentTarget);
+        var current_item = item.attr('class').split(' '); 
+
         for(item in weapons){
-            if(weapons[item].name == current_item){
+            if(weapons[item].name == current_item[0]){
                 var container = $('.item-stats');
                 var weaponImage = $('.item-image');
                 var shootingType = $('.shooting');
@@ -291,7 +329,7 @@ $(document).ready(function(){
         for(item in weapons) {
             tWeight = parseFloat(weapons[item].weight) + tWeight;
         }
-        $('.weight').html(tWeight + "/240");
+        $('.weightTotal').html(tWeight + "/240");
     }
 
     TotalWeight();

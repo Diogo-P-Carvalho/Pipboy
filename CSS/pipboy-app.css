@@ -7,6 +7,7 @@ body{
     font-family: Pipboy, sans-serif;
     color: #14fe17;
     background: #272b23;
+    font-size: 20px;
 }
 
 body::after{
@@ -188,9 +189,14 @@ ul > li.nav-item > a.nav-link{
     padding: 5px 10px;
 }
 
-.navbar.pip-footer .col-6{
+.stat-footer{
     margin: 0px 3px;
-    flex: 0 0 49%;
+    flex: 0%;
+}
+
+.inv-footer{
+    margin: 0px 3px;
+    flex: 0%;
 }
 
 .stat-bar{
@@ -414,4 +420,29 @@ ul > li.nav-item > a.nav-link{
     height: 25px;
     filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
     margin-top: -5px;
+}
+
+.bottle-cap-icon{
+    width: 30px;
+    height: 30px;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+    margin-top: -4px;
+}
+
+.gun-icon{
+    width: 35px;
+    height: 35px;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+    margin-top: -4px;
+}
+
+.shooting-type-icon{
+    width: 25px;
+    height: 25px;
+    filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg) saturate(20);
+    margin-top: -4px;
+}
+
+.shooting-type-icon-after{
+    margin: -4px 10px 0px;
 }
